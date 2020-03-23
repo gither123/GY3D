@@ -1,0 +1,32 @@
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+
+.admin {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #051413;
+}
+
+
+.SSSS{
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #051413;
+}
+
+.Google{
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #051413;
+}

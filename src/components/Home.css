@@ -1,0 +1,26 @@
+  .Home .lander h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+   
+  }
+  
+  .Home .lander p {
+    color: #0e8114;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .Home {
+    margin-top: 15px;
+    text-align: center;
+      padding: 80px 0;
+      color: #141614;
+  }
+
+  div {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
+
+  

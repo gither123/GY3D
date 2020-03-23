@@ -1,0 +1,26 @@
+type Todo @model {
+  id: ID!
+  name: String!
+  description: String!
+}
+
+type signup @model{
+  id: String! 
+  name: String! 
+  email: String!
+   password:String!
+
+}
+
+type issuelogged @model{
+  SName: String!
+  id: ID!
+  tid: ID!
+  TSellingLocationID: ID!
+  Tdescription: String!
+  Tlogindetail: String!
+  TTeamviewer: String!
+  Tenvironemrnt: String!
+  ThospRet: String!
+}
+
