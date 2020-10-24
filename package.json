@@ -51,10 +51,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "lambda.js",
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gither123/amps.git"
-  },
+
   "author": "",
   "license": "ISC",
   "bugs": {
