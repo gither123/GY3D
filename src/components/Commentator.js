@@ -33,8 +33,8 @@ class Commentator extends Component {
   
       <div className="row body">
         <div className="medium-12 columns">
-          <div className="medium-12 columns">
-            <h2 id="welcomeText"></h2>
+          <div className="medium-12 ">
+            <h2 id="welcomeText">Hi please login to comment the issue you are experiencing</h2>
             <div className="SSSS">
       <h2>Support Login</h2>
     </div>

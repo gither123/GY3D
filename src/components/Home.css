@@ -1,19 +1,21 @@
   .Home .lander h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family: DejaVuSansMono,monospace,sans-serif;
     font-weight: 600;
+    color: #25282c;
    
   }
   
   .Home .lander p {
-    color: #0e8114;
-    font-family: "Open Sans", sans-serif;
+    color: #25282c;
+    font-family: DejaVuSansMono,monospace,sans-serif;
   }
 
   .Home {
     margin-top: 15px;
     text-align: center;
       padding: 80px 0;
-      color: #141614;
+      color: #25282c;
+      font-family: DejaVuSansMono,monospace,sans-serif;
   }
 
   div {
@@ -23,4 +25,7 @@
     padding-left: 5px;
   }
 
-  
+  .query {
+    color: red;
+    font-family: DejaVuSansMono,monospace,sans-serif;
+  }

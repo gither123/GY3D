@@ -1,32 +1,40 @@
 @media all and (min-width: 480px) {
   .Login {
     padding: 60px 0;
+    font-family: DejaVuSansMono,monospace,sans-serif;
   }
 
   .Login form {
     margin: 0 auto;
     max-width: 320px;
+    font-family: DejaVuSansMono,monospace,sans-serif;
   }
 }
 
 .admin {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: DejaVuSansMono,monospace,sans-serif;
   font-weight: bold;
-  color: #051413;
+  color: #25282c;
 }
 
 
 .SSSS{
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: DejaVuSansMono,monospace,sans-serif;
   font-weight: bold;
-  color: #051413;
+  color: #25282c;
 }
 
 .Google{
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: DejaVuSansMono,monospace,sans-serif;
   font-weight: bold;
-  color: #051413;
+  color: #25282c;
+}
+.medium-12 {
+  text-align: center;
+  font-family: DejaVuSansMono,monospace,sans-serif;
+  font-weight: bold;
+  color: #25282c;
 }

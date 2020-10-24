@@ -30,18 +30,45 @@ mutation IsuueLog(
     }
     ) {id}
   }`
-
-class NewQuota extends Component {
-  state = {
+  
+class commentPost extends Component {
+ constructor(props) {
+   super(props);
+  this.state = {
     SName: '',
     tid: '',
     TSellingLocationID: '',
     Tdescription: '',
     Tlogindetail: '',
     TTeamviewer: '',
-    ThospRet:'',
-    Tenvironemrnt:''
+    ThospRet: '',
+    Tenvironemrnt: '',
+    sent: false,
+    error: false
+  
+    
+  };
+ }  onInputChange(e) {
+  this.setState({ [e.target.SName]: e.target.value} )
   }
+  onClick(e) {
+    const name = this.state.SName;
+e.preventDefault();
+const gatewayUrl = 'https://hooks.slack.com/services/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';
+fetch(gatewayUrl, {
+    method: "POST",
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        SName: { name }
+}).then(
+    () => { this.setState({ sent: true }); },
+    () => { this.setState({ error: true }); }) }
+);
+  }
+
 
   render() {
     const { Tdescription, TSellingLocationID, tid, Tlogindetail, TTeamviewer, Tenvironemrnt, ThospRet, SName} = this.state
@@ -57,15 +84,15 @@ class NewQuota extends Component {
                      <li>Teamviewer Details(ID:PASSWORD)</li>
                      <li>What is the issue you are experiencing</li>
                      </ol>         
-                     <p>Make sure you fill in everything!!! if there is no info to provide please ad Null to the fields</p>       
+                     <p>Make sure you fill in everything!!! if there is no info to provide please ad an NAN to the fields</p>       
                      <input
             className="mb2"
             value={SName}
             onChange={e => this.setState({ SName: e.target.value })}
             type="text"
-            placeholder="Support Name"
+            placeholder="Support Technicians  Name"
           />
-       
+       <form>
         <input
             className="mb2"
             value={tid}
@@ -78,14 +105,14 @@ class NewQuota extends Component {
             value={TSellingLocationID}
             onChange={e => this.setState({ TSellingLocationID:e.target.value})}
             type="text"
-            placeholder="TSellingLocationID"
+            placeholder="Tenant SellingLocationID & StockLocationID"
           />
             <input
             className="mb2"
             value={Tlogindetail}
             onChange={e => this.setState({ Tlogindetail:e.target.value })}
             type="text"
-            placeholder="Login Details experiencing the issue"
+            placeholder="Login details experiencing the issue if applicable"
             
           />
            <input
@@ -93,21 +120,21 @@ class NewQuota extends Component {
             value={TTeamviewer}
             onChange={e => this.setState({ TTeamviewer:e.target.value})}
             type="text"
-            placeholder="TeamViewer Details(ID:PASSWORD)"
+            placeholder="TeamViewer Details (ID:PASSWORD)"
           />
            <input
             className="mb2"
             value={Tdescription}
             onChange={e => this.setState({ Tdescription:e.target.value})}
             type="text"
-            placeholder="What the issue is you are currently experiencing"
+            placeholder="What is the issue is you are currently experiencing"
           />
            <input
             className="mb2"
             value={Tenvironemrnt}
             onChange={e => this.setState({ Tenvironemrnt:e.target.value})}
             type="text"
-            placeholder="Setup- Master|Independant or Master&Slave"
+            placeholder="Setup Master | Independant or Master & Slave"
           />
            <input
             className="mb2"
@@ -116,13 +143,14 @@ class NewQuota extends Component {
             type="text"
             placeholder="Hospitality or Retail"
           />
+          </form>
         </div>
         <div className="wrapper">  <Mutation mutation={CreateLOG} variables={{SName, Tdescription, TSellingLocationID, tid, Tlogindetail, TTeamviewer, Tenvironemrnt, ThospRet}}>
   {postMutation => <button onClick = {postMutation} >Submit</button>}   
 </Mutation>
 </div>
 <div className="rapper">
-       <Link to="/"><button >Back to checklist</button></Link>    
+       <Link to="/"><button >Back to Home</button></Link>    
        </div>   
      
       </div>   
@@ -130,6 +158,6 @@ class NewQuota extends Component {
   }
 }
 
-export default NewQuota
+export default commentPost
 
 

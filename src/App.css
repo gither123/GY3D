@@ -2,14 +2,15 @@
 
 .App {
   margin-top: 18px;
-
+  font-family: DejaVuSansMono,monospace,sans-serif;
 }
 
 .App .navbar-brand {
   font-weight: bold;
+  font-family: DejaVuSansMono,monospace,sans-serif;
 }
 
 body {
-  background-color: #90d9d3;
+  background-color: #151618;
  }
 

@@ -66,3 +66,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+Slack set TOKEN ON WINDOWS IN THE AMPS FORLDER
+### SET SLACK_TOKEN=xoxb-951850517396-991982860881-zPsdcPCfJJLsKakaKq4gxaav
+
+Slack whoook url
+### hooks.slack.com/services/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
+
+
+${Home.data.name}
