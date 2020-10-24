@@ -17,6 +17,8 @@ const FEED_QUERY = gql`
 `
 class LinkList extends Component {
   render() {
+
+    
     return (
       <div className="query">
       <Query query={FEED_QUERY}>
