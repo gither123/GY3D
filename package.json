@@ -51,11 +51,11 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "lambda.js",
   "devDependencies": {},
-
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gither123/GY3D.git"
+  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gither123/amps/issues"
-  },
   "homepage": "localhost"
 }
